@@ -51,8 +51,7 @@ client.on("messageCreate", (message) => {
     // whatTime command
     if (message.content === "whatTime") {
         message.reply(
-            `The time is ${time.getHours() - 12 < 0 ? time.getHours() : ""}${time.getHours() - 12
-            }:${time.getMinutes()}:${time.getSeconds()}`
+            `The time is ${time.getHours() - 12 < 0 ? time.getHours() : time.getHours() - 12}:${time.getMinutes()}:${time.getSeconds()}`
         );
     }
 });
